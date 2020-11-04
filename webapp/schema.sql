@@ -1,0 +1,7 @@
+DROP TABLE IF EXISTS product;
+
+CREATE TABLE product (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  category TEXT NOT NULL,
+  image_path TEXT NOT NULL
+);
