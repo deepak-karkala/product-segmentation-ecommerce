@@ -81,12 +81,13 @@
             </div>
             -->
 
-            <form action="{{ url_for('hello') }}" method="POST">
+            <form action="{{ url_for('hello') }}" id="input_form" method="POST">
 
               <div class="row text-center">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-12 mx-auto">
                   <div id="toolbar" class="btn-toolbar text-center justify-content-center">
-                    <a href="javascript:void(0)" id="all" class="button active">All</a>
+                    <!--
+                    <a href="javascript:void(0)" id="all" class="button">All</a>
                     <a href="javascript:void(0)" id="couch" class="button">Couch</a>
                     <a href="javascript:void(0)" id="chair" class="button">Chair</a>
                     <a href="javascript:void(0)" id="bed" class="button">Bed</a>
@@ -95,6 +96,52 @@
                     <a href="javascript:void(0)" id="cup" class="button">Cup</a>
                     <a href="javascript:void(0)" id="wineglass" class="button">Wine glass</a>
                     <a href="javascript:void(0)" id="pottedplant" class="button">Potted plant</a>
+                    -->
+
+
+
+                    {% if filter_product_category %}
+
+                      {% if filter_product_category == "All" %}
+                        <input type="submit" name="filter_product_button" class="button active" id="filter_product_button" value="All">
+                      {% else %}
+                        <input type="submit" name="filter_product_button" class="button" id="filter_product_button" value="All">
+                      {% endif %}
+
+                      {% if filter_product_category == "Bed" %}
+                        <input type="submit" name="filter_product_button" class="button active" id="filter_product_button" value="Bed">
+                      {% else %}
+                        <input type="submit" name="filter_product_button" class="button" id="filter_product_button" value="Bed">
+                      {% endif %}
+
+                      {% if filter_product_category == "Chair" %}
+                        <input type="submit" name="filter_product_button" class="button active" id="filter_product_button" value="Chair">
+                      {% else %}
+                        <input type="submit" name="filter_product_button" class="button" id="filter_product_button" value="Chair">
+                      {% endif %}
+
+                    {% else %}
+
+                      <input type="submit" name="filter_product_button" class="button active" id="filter_product_button" value="All">
+                      <input type="submit" name="filter_product_button" class="button" id="filter_product_button" value="Bed">
+                      <input type="submit" name="filter_product_button" class="button" id="filter_product_button" value="Chair">
+                    {% endif %}
+
+                    
+                    <!--
+                    <button type="button" class="btn btn-primary" name="filter_product_button" id="filter_product_button" value="All">All</button>
+                    <button type="button" class="btn btn-primary" name="filter_product_button" id="filter_product_button" value="Bed">Bed</button>
+                    <button type="button" class="btn btn-primary" name="filter_product_button" id="filter_product_button" value="Chair">Chair</button>
+                    -->
+
+                    <!--
+                    <div class="btn-group" name="filter_product_button" id="filter_product_button" role="group" aria-label="Basic example">
+                      <button type="button" class="btn btn-secondary" value="All">All</button>
+                      <button type="button" class="btn btn-secondary" value="Bed">Bed</button>
+                      <button type="button" class="btn btn-secondary" value="Chair">Chair</button>
+                    </div>
+                    -->
+
                   </div>
                 </div>
               </div>
@@ -104,31 +151,35 @@
               <div class="overflow-auto">
                 <div class="row">
 
+                  
                   <div class="col-lg-8 col-6 mx-auto product_showcase">
                     <div class="row product_showcase">
                       {% for image in images %}
-                        <div class="col-lg-3 col-4 mx-auto">
-                          {% if selected_image %}
-                            {% if selected_image == image %}
-                              <input type="radio" name="product_radio" id="{{image}}" value="{{image}}" checked="checked">
+                        {% if not filter_product_category or (filter_product_category and image.category == filter_product_category) %}
+                          <div class="col-lg-3 col-4 mx-auto">
+                            {% if selected_image %}
+                              {% if selected_image.id == image.id %}
+                                <input type="radio" name="product_radio" id="product_radio" value="{{image.id}}" checked="checked">
+                              {% else %}
+                                <input type="radio" name="product_radio" id="product_radio" value="{{image.id}}">
+                              {% endif %}
                             {% else %}
-                              <input type="radio" name="product_radio" id="{{image}}" value="{{image}}">
+                              <input type="radio" name="product_radio" id="product_radio" value="{{image.id}}">
                             {% endif %}
-                          {% else %}
-                            <input type="radio" name="product_radio" id="{{image}}" value="{{image}}">
-                          {% endif %}
-                          <img class="img_product" src="{{url_for('static', filename='images/' + image)}}">
-                        </div>
+                            <img class="img_product" src="{{url_for('static', filename='images/' + image.image_path)}}">
+                          </div>
+                        {% endif %}
                       {% endfor %}
                     </div>
                   </div>
 
+  
                   <div class="col-lg-4 col-6 mx-auto">
                     <div class="row show_result">
                       <div class="col-lg-12 col-12 mx-auto">
                           {% if selected_image %}
-                            <p class="color:black;">Your Segmented product -- {{ selected_image.split(".jpg")[0]}}</p>
-                            <img class="seg_product" src="{{url_for('static', filename='images/' + selected_image)}}">
+                            <p class="color:black;">Your Segmented product</p>
+                            <img class="seg_product" src="{{url_for('static', filename='images/' + selected_image.image_path)}}">
                           {% endif %}
                       </div>
                     </div>
