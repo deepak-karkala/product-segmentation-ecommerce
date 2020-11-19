@@ -152,7 +152,7 @@
                 <div class="row">
 
                   
-                  <div class="col-lg-8 col-6 mx-auto product_showcase">
+                  <div class="col-lg-6 col-6 mx-auto product_showcase">
                     <div class="row product_showcase">
                       {% for image in images %}
                         {% if not filter_product_category or (filter_product_category and image.category == filter_product_category) %}
@@ -183,10 +183,13 @@
                           {% endif %}
                       </div>
                     </div>
-                    <div class="row show_result">
-                      <div class="col-lg-6 col-6 mx-auto" id="container">
+                    <div class="row show_result" id="show_result">
+                      <div class="col-lg-12 col-12 mx-auto" id="container">
                         <video autoplay="true" id="videoElement">
                         </video>
+                          {% if selected_image %}
+                            <img id="overlay_image" src="{{url_for('static', filename='images/' + selected_image.image_path)}}" />
+                          {% endif %}
                       </div>
                     </div>
                   </div>
