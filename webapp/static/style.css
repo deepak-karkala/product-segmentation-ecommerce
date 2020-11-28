@@ -269,7 +269,7 @@ p {
 }
 
 .seg_product {
-  height: 150px;
+  height: 20vh;
   width: auto;
 }
 
@@ -288,30 +288,32 @@ p {
   padding-left: 0px;
 }
 
+/*
 #overlay_image {
   position: absolute;
   display: none;
   width: 50%;
   height: auto;
 }
+*/
 
 .show_result {
+  height: 25vh;
   margin-top: 10px;
   /*padding-top: 10px;*/
   background-color: #dcdcdc;
 }
 
 .tooltip1 {
-  width: 25vh;
-  display: flex;
-  flex-direction: column;
-  min-height: 1vh;
   position: absolute;           
-  text-align: center;           
-  /*width: 320px;
-  height: 360px;*/                
-  font: 12px sans-serif;        
   background: transparent;   
-  pointer-events: none;
-  color: black;
+}
+
+.video_stream_text_container, .video_stream_slider_container, .video_stream_container {
+  background-color: #dcdcdc;
+}
+
+.video_stream_container_text {
+  font-size: 0.75rem;
+  background-color: #dcdcdc;
 }

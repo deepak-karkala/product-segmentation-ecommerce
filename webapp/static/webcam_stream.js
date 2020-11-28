@@ -29,12 +29,12 @@ $("#videoElement").click(function (e) {
 	var videoCenterOffset = videoLeft + videoWidth*0.50;
 
 	if (e.pageX >= videoCenterOffset) {
-		return tooltip.html(`<img src='static/product_segmented_image/test.png'>`)
+		return tooltip.html(`<img class='img_overlaid' src='static/product_segmented_image/product_segmented_image.png'>`)
 				.style("top", Math.min(videoBottom-150, (e.pageY)) + "px")
-				.style("left", Math.max(videoLeft, (e.pageX-300)) + "px")
+				.style("left", Math.max(videoLeft, (e.pageX-100)) + "px")
 				.style("visibility", "visible");
 	} else {
-		return tooltip.html(`<img src='static/product_segmented_image/test.png'>`)
+		return tooltip.html(`<img class='img_overlaid' src='static/product_segmented_image/product_segmented_image.png'>`)
 				.style("top", Math.min(videoBottom-150,(e.pageY)) + "px")
 				.style("left", Math.max(videoLeft, (e.pageX-50)) + "px")
 				.style("visibility", "visible");
@@ -71,16 +71,18 @@ function set_size_slider() {
 	//var handle = $( "#custom-handle" );
 	$( "#slider-range-min" ).slider({
 	  create: function() {
-	    //handle.text( $( this ).slider( "value" ) );
 	  },
 	  slide: function( event, ui ) {
+	  	$(".img_overlaid").css("width", ui.value+"vw").css("height", ui.value+"vw");
+	   	//tooltip.style("height", ui.value+"vh").style("width", 200);
 	  },
 	  change: function(event, ui) {
-	   	tooltip.style("width", ui.value+"vh").style("height", "auto");
+	  	$(".img_overlaid").css("width", ui.value+"vw").css("height", ui.value+"vw");
+	   	//tooltip.style("height", ui.value+"vh").style("width", 200);
 	  },
 	  range: "min",
-	  max: 40,
-	  min: 10,
+	  max: 20,
+	  min: 5,
 	  step: 5,
 	  value: 30,
 	});
