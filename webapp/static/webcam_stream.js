@@ -81,9 +81,9 @@ function set_size_slider() {
 	   	//tooltip.style("height", ui.value+"vh").style("width", 200);
 	  },
 	  range: "min",
-	  max: 20,
-	  min: 5,
-	  step: 5,
-	  value: 30,
+	  max: 18,
+	  min: 3,
+	  step: 3,
+	  value: 12,
 	});
 }
