@@ -19,6 +19,7 @@ load_model_path = base_path + "models/model.h5"
 model = keras.models.load_model(load_model_path)
 
 
+
 def create_app(test_config=None):
     # create and configure the app
     app = Flask(__name__, instance_relative_config=True)
@@ -79,9 +80,8 @@ def create_app(test_config=None):
                 # Get segmentation mask from model (Run inference on model)
                 full_image_path = base_path + "images/" + selected_image["image_path"]
                 product_segmented_image_path = get_model_output_segmentation_mask(full_image_path)
-                product_segmented_image_path = "product_segmented_image/" + "test.png"
+                # product_segmented_image_path = "product_segmented_image/" + "test.png"
                 # product_segmented_image_path = None
-                # <img id="overlay_image" src="{{url_for('static', filename=product_segmented_image_path)}}" />
                 
             else:
                 selected_image = None
