@@ -1,5 +1,5 @@
-import sys
-sys.path.append("/Users/nesara/Documents/aim/cs/projects/product-segmentation-ecommerce/")
+import os, sys
+sys.path.append(".")
 import webapp
 
 import os
@@ -7,7 +7,6 @@ import io
 import pickle
 from flask import Flask
 import flask
-#from flask_bootstrap import Bootstrap
 import joblib
 import numpy as np
 import pandas as pd
@@ -16,14 +15,13 @@ import tensorflow as tf
 from tensorflow import keras
 from PIL import Image
 
-
-base_path = "/Users/nesara/Documents/aim/cs/projects/product-segmentation-ecommerce/webapp/static/";
+BASE_PATH = "webapp/";
 
 def load_model():
     # Load pre-trained machine learning model.
-    load_model_path = base_path + "models/model.h5"
-    #from keras.models import load_model
-    model = keras.models.load_model(load_model_path)
+    #load_model_path = base_path + "models/model.h5"
+    #model = keras.models.load_model(load_model_path)
+    model = keras.models.load_model(BASE_PATH + "static/models/model.h5")
     return model
 
 model = load_model()
@@ -87,7 +85,7 @@ def create_app(test_config=None):
                     ).fetchone()
 
                 # Get segmentation mask from model (Run inference on model)
-                full_image_path = base_path + "images/" + selected_image["image_path"]
+                full_image_path = BASE_PATH + "static/images/" + selected_image["image_path"]
                 product_segmented_image_path = get_model_output_segmentation_mask(full_image_path)
                 # product_segmented_image_path = "product_segmented_image/" + "test.png"
                 # product_segmented_image_path = None
@@ -205,8 +203,8 @@ def get_model_output_segmentation_mask(image_path):
     product_segmented = get_segmented_product(input_image, seg_mask)
 
     # Save segmented product as image
-    product_segmented_image_path = "product_segmented_image/" + "product_segmented_image.png"
-    product_segmented.save(base_path + product_segmented_image_path, "PNG")
+    product_segmented_image_path = "product_segmented_image.png"
+    product_segmented.save(BASE_PATH + "static/" + product_segmented_image_path, "PNG")
 
     return product_segmented_image_path
 
@@ -265,6 +263,5 @@ def get_segmented_product(input_image, seg_mask):
 if __name__ == "__main__":
     print(("* Loading Keras model and Flask starting server..."
         "please wait until server has fully started"))
-    # model = load_model(base_path)
     app = create_app()
-    app.run(host='0.0.0.0')
+    app.run(host='0.0.0.0', port=80)

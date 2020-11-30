@@ -29,12 +29,12 @@ $("#videoElement").click(function (e) {
 	var videoCenterOffset = videoLeft + videoWidth*0.50;
 
 	if (e.pageX >= videoCenterOffset) {
-		return tooltip.html(`<img class='img_overlaid' src='static/product_segmented_image/product_segmented_image.png'>`)
+		return tooltip.html(`<img class='img_overlaid' src='static/product_segmented_image.png'>`)
 				.style("top", Math.min(videoBottom-150, (e.pageY)) + "px")
 				.style("left", Math.max(videoLeft, (e.pageX-100)) + "px")
 				.style("visibility", "visible");
 	} else {
-		return tooltip.html(`<img class='img_overlaid' src='static/product_segmented_image/product_segmented_image.png'>`)
+		return tooltip.html(`<img class='img_overlaid' src='static/product_segmented_image.png'>`)
 				.style("top", Math.min(videoBottom-150,(e.pageY)) + "px")
 				.style("left", Math.max(videoLeft, (e.pageX-50)) + "px")
 				.style("visibility", "visible");
