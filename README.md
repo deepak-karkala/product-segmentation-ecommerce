@@ -452,19 +452,10 @@ for optimizer in HP_OPTIMIZER.domain.values:
     </p>
   </div>
 </div>
-<div class="row image_row">
-  <div class="col-lg-8 col-md-12 col-sm-12 col-12 mx-auto">
-    <div class="row">
-      <div class="col-lg-9 col-md-9 col-sm-9 col-9 mx-auto">
-        <img src="doc_images/hp_table.png" width="400">
-      </div>
-      <div class="col-lg-3 col-md-3 col-sm-3 col-3 mx-auto">
-        <img  src="doc_images/hp_matrix.png" width="150">
-      </div>
-    </div>
-  </div>
-</div>
-
+<p float="left">
+  <img src="doc_images/hp_table.png" width="400" />
+  <img src="doc_images/hp_matrix.png" width="150" /> 
+</p>
 <div class="row">
   <div class="col-lg-8 col-md-10 col-sm-10 col-12 mx-auto" id="profiler">
     <h3 class="sub-title">Tensorflow Profiler</h3>
@@ -481,34 +472,13 @@ for optimizer in HP_OPTIMIZER.domain.values:
   </div>
 </div>
 <p float="left">
-  <img src="doc_images/profiler_steptime.png" width="300" />
-  <img src="doc_images/profiler_memory.png" width="300" /> 
+  <img src="doc_images/profiler_steptime.png" width="400" />
+  <img src="doc_images/profiler_memory.png" width="400" /> 
 </p>
 <p float="left">
-  <img src="doc_images/profiler_time.png" width="300" />
-  <img src="doc_images/profiler_gpukernel.png" width="300" /> 
+  <img src="doc_images/profiler_time.png" width="400" />
+  <img src="doc_images/profiler_gpukernel.png" width="400" /> 
 </p>
-<div class="row">
-  <div class="col-lg-10 col-md-12 col-sm-12 col-12 mx-auto">
-    <div class="row">
-      <div class="col-lg-6 col-md-10 col-sm-10 col-10 mx-auto profiler_image">
-        <img  src="doc_images/profiler_steptime.png" width="400">
-      </div>
-      <div class="col-lg-6 col-md-10 col-sm-10 col-10 mx-auto profiler_image">
-        <img  src="doc_images/profiler_memory.png" width="400">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-6 col-md-10 col-sm-10 col-10 mx-auto profiler_image">
-        <img  src="doc_images/profiler_time.png" width="400">
-      </div>
-      <div class="col-lg-6 col-md-10 col-sm-10 col-10 mx-auto profiler_image">
-        <img  src="doc_images/profiler_gpukernel.png" width="400">
-      </div>
-    </div>
-  </div>
-</div>
-
 <div class="row">
   <div class="col-lg-8 col-md-10 col-sm-10 col-12 mx-auto" id="input_pipeline">
     <h3 class="sub-title">Tensorflow Input Data Pipeline</h3>
@@ -637,20 +607,10 @@ model_history = model.fit(train_dataset, epochs=EPOCHS,
     </p>
   </div>
 </div>
-<div class="row image_row">
-  <div class="col-lg-4 col-md-6 col-sm-8 col-8 mx-auto">
-    <div class="row">
-      <div class="col-lg-6 col-md-6 col-sm-6 col-6 mx-auto learning_image">
-        <span class="learning_epoch_title">Input Image</span>
-        <img  src="doc_images/learning/input.png" width="200">
-      </div>
-      <div class="col-lg-6 col-md-6 col-sm-6 col-6 mx-auto learning_image">
-        <span class="learning_epoch_title">True Mask</span>
-        <img  src="doc_images/learning/true_mask.png" width="200">
-      </div>
-    </div>
-  </div>
-</div>
+<p float="left">
+  <img src="doc_images/learning/input.png" width="200" />
+  <img src="doc_images/learning/true_mask.png" width="200" /> 
+</p>
 <div class="row learning_image_top">
   <div class="col-lg-8 col-md-12 col-sm-12 col-12 mx-auto">
     <div class="row">
