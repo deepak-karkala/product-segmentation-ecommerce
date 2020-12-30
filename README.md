@@ -381,18 +381,6 @@ model = build_model()
   <img src="doc_images/accuracy.png" width="300" />
   <img src="doc_images/loss.png" width="300" /> 
 </p>
-<div class="row image_row">
-  <div class="col-lg-8 col-md-12 col-sm-12 col-12 mx-auto">
-    <div class="row">
-      <div class="col-lg-6 col-md-6 col-sm-6 col-10 mx-auto">
-        <img  src="doc_images/accuracy.png">
-      </div>
-      <div class="col-lg-6 col-md-6 col-sm-6 col-10 mx-auto">
-        <img  src="doc_images/loss.png">
-      </div>
-    </div>
-  </div>
-</div>
 <div class="row">
   <div class="col-lg-8 col-md-10 col-sm-10 col-12 mx-auto">
     <p class="p_no_top_gap">
@@ -468,7 +456,7 @@ for optimizer in HP_OPTIMIZER.domain.values:
   <div class="col-lg-8 col-md-12 col-sm-12 col-12 mx-auto">
     <div class="row">
       <div class="col-lg-9 col-md-9 col-sm-9 col-9 mx-auto">
-        <img src="doc_images/hp_table.png" width="500">
+        <img src="doc_images/hp_table.png" width="400">
       </div>
       <div class="col-lg-3 col-md-3 col-sm-3 col-3 mx-auto">
         <img  src="doc_images/hp_matrix.png" width="150">
@@ -492,6 +480,14 @@ for optimizer in HP_OPTIMIZER.domain.values:
     </p>
   </div>
 </div>
+<p float="left">
+  <img src="doc_images/profiler_steptime.png" width="300" />
+  <img src="doc_images/profiler_memory.png" width="300" /> 
+</p>
+<p float="left">
+  <img src="doc_images/profiler_time.png" width="300" />
+  <img src="doc_images/profiler_gpukernel.png" width="300" /> 
+</p>
 <div class="row">
   <div class="col-lg-10 col-md-12 col-sm-12 col-12 mx-auto">
     <div class="row">
