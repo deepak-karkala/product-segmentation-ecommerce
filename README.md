@@ -378,8 +378,8 @@ model = build_model()
   </div>
 </div>
 <p float="left">
-  <img src="doc_images/accuracy.png" width="100" />
-  <img src="doc_images/loss.png" width="100" /> 
+  <img src="doc_images/accuracy.png" width="300" />
+  <img src="doc_images/loss.png" width="300" /> 
 </p>
 <div class="row image_row">
   <div class="col-lg-8 col-md-12 col-sm-12 col-12 mx-auto">
