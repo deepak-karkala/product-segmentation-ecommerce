@@ -16,7 +16,7 @@ The project consisted of the following steps,
 * Container: Using Docker to containerise the Web Application
 * Production: Using AWS CI/CD Pipeline for continuous integration and deployment.
 
-![Project Overview](/doc_doc_images/ecom_prod_seg_overview.png)
+![Project Overview](/doc_images/ecom_prod_seg_overview.png)
 
 ## Project Setup
 ### Project Resources
@@ -45,7 +45,7 @@ The project consisted of the following steps,
 
 <div class="row image_row">
   <div class="col-lg-6 col-md-10 col-sm-10 col-12 mx-auto">
-    <img class="block_diagram" src="doc_doc_images/ecom_prod_seg_goal.png">
+    <img class="block_diagram" src="doc_images/ecom_prod_seg_goal.png">
   </div>
 </div>
 
@@ -79,7 +79,7 @@ The project consisted of the following steps,
 </div>
 <div class="row image_row">
   <div class="col-lg-6 col-md-10 col-sm-10 col-12 mx-auto">
-    <img class="block_diagram" src="doc_doc_images/demo_2x.gif">
+    <img class="block_diagram" src="doc_images/demo_2x.gif">
   </div>
 </div>
 
@@ -95,7 +95,7 @@ The project consisted of the following steps,
 
 <div class="row image_row">
   <div class="col-lg-6 col-md-10 col-sm-10 col-12 mx-auto">
-    <img class="block_diagram" src="doc_doc_images/ecom_prod_seg_setup.png">
+    <img class="block_diagram" src="doc_images/ecom_prod_seg_setup.png">
   </div>
 </div>
 
@@ -112,7 +112,7 @@ The project consisted of the following steps,
 
 <div class="row image_row">
   <div class="col-lg-6 col-md-10 col-sm-10 col-12 mx-auto">
-    <img class="block_diagram" src="doc_doc_images/ecom_prod_seg_data.png">
+    <img class="block_diagram" src="doc_images/ecom_prod_seg_data.png">
   </div>
 </div>
 
@@ -155,7 +155,7 @@ The project consisted of the following steps,
 </div>
 <div class="row image_row">
   <div class="col-lg-4 col-md-10 col-sm-10 col-12 mx-auto">
-    <img class="block_diagram" src="doc_doc_images/ecom_prod_seg_datapipeline.png">
+    <img class="block_diagram" src="doc_images/ecom_prod_seg_datapipeline.png">
   </div>
 </div>
 
