@@ -28,6 +28,7 @@ The project consisted of the following steps,
   <div class="col-lg-8 col-md-10 col-sm-10 col-12 mx-auto">
     <ul>
       <li>The <a href="http://ec2-65-0-106-104.ap-south-1.compute.amazonaws.com/">AWS Webapp</a> for this project</li>
+      <li>View Project <a href="http://deepakkarkala.com/docs/articles/machine_learning/ecommerce_image_segmentation/about/index.html">Report</a></li>
       <li>Run this code on <a href="https://colab.research.google.com/drive/1snDybPVSYFC2swpiexTW5_F6Prv_fQ_F?usp=sharing">Google Colab</a></li>
       <li>View Source on <a href="https://github.com/deepak-karkala/product-segmentation-ecommerce">Github</a></li>
       <li>Docker Container for the project: dkarkala01/ecom-prod-seg-app</li>
@@ -466,7 +467,7 @@ for optimizer in HP_OPTIMIZER.domain.values:
         <img src="doc_images/hp_table.png" width="500">
       </div>
       <div class="col-lg-3 col-md-3 col-sm-3 col-3 mx-auto">
-        <img  src="doc_images/hp_matrix.png" width="200">
+        <img  src="doc_images/hp_matrix.png" width="150">
       </div>
     </div>
   </div>
@@ -827,7 +828,7 @@ print(tflite_model_fp16_file.write_bytes(tflite_fp16_model))
 </div>
 <div class="row image_row">
   <div class="col-lg-8 col-md-10 col-sm-10 col-12 mx-auto">
-    <img src="doc_images/model_quantisation.png" width="400">
+    <img src="doc_images/model_quantisation.png" width="600">
   </div>
 </div>
 
@@ -879,90 +880,90 @@ loaded_model = keras.models.load_model(save_model_path)
       <div class="col-lg-4 col-md-6 col-sm-6 col-6 mx-auto prediction_image_top">
         <div class="row prediction_image_row">
           <div class="col-lg-6 col-md-6 col-sm-6 col-6 mx-auto">
-            <img  src="doc_images/predictions/test0.png" width="300">
+            <img  src="doc_images/predictions/test0.png" width="200">
           </div>
           <div class="col-lg-6 col-md-6 col-sm-6 col-6 mx-auto prediction_image">
-            <img  src="doc_images/predictions/prediction0.png" width="300">
+            <img  src="doc_images/predictions/prediction0.png" width="200">
           </div>
         </div>
       </div>
       <div class="col-lg-4 col-md-6 col-sm-6 col-6 mx-auto">
         <div class="row prediction_image_row">
           <div class="col-lg-6 col-md-6 col-sm-6 col-6 mx-auto">
-            <img  src="doc_images/predictions/test28.png" width="300">
+            <img  src="doc_images/predictions/test28.png" width="200">
           </div>
           <div class="col-lg-6 col-md-6 col-sm-6 col-6 mx-auto prediction_image">
-            <img  src="doc_images/predictions/prediction28.png" width="300">
+            <img  src="doc_images/predictions/prediction28.png" width="200">
           </div>
         </div>
       </div>
       <div class="col-lg-4 col-md-6 col-sm-6 col-6 mx-auto">
         <div class="row prediction_image_row">
           <div class="col-lg-6 col-md-6 col-sm-6 col-6 mx-auto">
-            <img  src="doc_images/predictions/test15.png" width="300">
+            <img  src="doc_images/predictions/test15.png" width="200">
           </div>
           <div class="col-lg-6 col-md-6 col-sm-6 col-6 mx-auto prediction_image">
-            <img  src="doc_images/predictions/prediction15.png" width="300">
+            <img  src="doc_images/predictions/prediction15.png" width="200">
           </div>
         </div>
       </div>
       <div class="col-lg-4 col-md-6 col-sm-6 col-6 mx-auto">
         <div class="row prediction_image_row">
           <div class="col-lg-6 col-md-6 col-sm-6 col-6 mx-auto">
-            <img  src="doc_images/predictions/test18.png" width="300">
+            <img  src="doc_images/predictions/test18.png" width="200">
           </div>
           <div class="col-lg-6 col-md-6 col-sm-6 col-6 mx-auto prediction_image">
-            <img  src="doc_images/predictions/prediction18.png" width="300">
+            <img  src="doc_images/predictions/prediction18.png" width="200">
           </div>
         </div>
       </div>
       <div class="col-lg-4 col-md-6 col-sm-6 col-6 mx-auto">
         <div class="row prediction_image_row">
           <div class="col-lg-6 col-md-6 col-sm-6 col-6 mx-auto">
-            <img  src="doc_images/predictions/test33.png" width="300">
+            <img  src="doc_images/predictions/test33.png" width="200">
           </div>
           <div class="col-lg-6 col-md-6 col-sm-6 col-6 mx-auto prediction_image">
-            <img  src="doc_images/predictions/prediction33.png" width="300">
+            <img  src="doc_images/predictions/prediction33.png" width="200">
           </div>
         </div>
       </div>
       <div class="col-lg-4 col-md-6 col-sm-6 col-6 mx-auto">
         <div class="row prediction_image_row">
           <div class="col-lg-6 col-md-6 col-sm-6 col-6 mx-auto">
-            <img  src="doc_images/predictions/test39.png" width="300">
+            <img  src="doc_images/predictions/test39.png" width="200">
           </div>
           <div class="col-lg-6 col-md-6 col-sm-6 col-6 mx-auto prediction_image">
-            <img  src="doc_images/predictions/prediction39.png" width="300">
+            <img  src="doc_images/predictions/prediction39.png" width="200">
           </div>
         </div>
       </div>
       <div class="col-lg-4 col-md-6 col-sm-6 col-6 mx-auto">
         <div class="row prediction_image_row">
           <div class="col-lg-6 col-md-6 col-sm-6 col-6 mx-auto">
-            <img  src="doc_images/predictions/test83.png" width="300">
+            <img  src="doc_images/predictions/test83.png" width="200">
           </div>
           <div class="col-lg-6 col-md-6 col-sm-6 col-6 mx-auto prediction_image">
-            <img  src="doc_images/predictions/prediction83.png" width="300">
+            <img  src="doc_images/predictions/prediction83.png" width="200">
           </div>
         </div>
       </div>
       <div class="col-lg-4 col-md-6 col-sm-6 col-6 mx-auto">
         <div class="row prediction_image_row">
           <div class="col-lg-6 col-md-6 col-sm-6 col-6 mx-auto">
-            <img  src="doc_images/predictions/test92.png" width="300">
+            <img  src="doc_images/predictions/test92.png" width="200">
           </div>
           <div class="col-lg-6 col-md-6 col-sm-6 col-6 mx-auto prediction_image">
-            <img  src="doc_images/predictions/prediction92.png" width="300">
+            <img  src="doc_images/predictions/prediction92.png" width="200">
           </div>
         </div>
       </div>
       <div class="col-lg-4 col-md-6 col-sm-6 col-6 mx-auto">
         <div class="row prediction_image_row">
           <div class="col-lg-6 col-md-6 col-sm-6 col-6 mx-auto">
-            <img  src="doc_images/predictions/test94.png" width="300">
+            <img  src="doc_images/predictions/test94.png" width="200">
           </div>
           <div class="col-lg-6 col-md-6 col-sm-6 col-6 mx-auto prediction_image">
-            <img  src="doc_images/predictions/prediction94.png" width="300">
+            <img  src="doc_images/predictions/prediction94.png" width="200">
           </div>
         </div>
       </div>
@@ -1194,5 +1195,18 @@ def predict():
 <div class="row image_row">
   <div class="col-lg-8 col-md-10 col-sm-10 col-12 mx-auto">
     <img class="block_diagram" src="doc_images/ecom_prod_seg_production.png" width="700">
+  </div>
+</div>
+
+### Project Resources
+<div class="row">
+  <div class="col-lg-8 col-md-10 col-sm-10 col-12 mx-auto">
+    <ul>
+      <li>The <a href="http://ec2-65-0-106-104.ap-south-1.compute.amazonaws.com/">AWS Webapp</a> for this project</li>
+      <li>View Project <a href="http://deepakkarkala.com/docs/articles/machine_learning/ecommerce_image_segmentation/about/index.html">Report</a></li>
+      <li>Run this code on <a href="https://colab.research.google.com/drive/1snDybPVSYFC2swpiexTW5_F6Prv_fQ_F?usp=sharing">Google Colab</a></li>
+      <li>View Source on <a href="https://github.com/deepak-karkala/product-segmentation-ecommerce">Github</a></li>
+      <li>Docker Container for the project: dkarkala01/ecom-prod-seg-app</li>
+    </ul>
   </div>
 </div>
