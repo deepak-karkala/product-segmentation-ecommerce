@@ -611,6 +611,14 @@ model_history = model.fit(train_dataset, epochs=EPOCHS,
   <img src="doc_images/learning/input.png" width="200" />
   <img src="doc_images/learning/true_mask.png" width="200" /> 
 </p>
+<p float="left">
+  <img src="doc_images/learning/epoch0.png" width="100" />
+  <img src="doc_images/learning/epoch2.png" width="100" /> 
+  <img src="doc_images/learning/epoch5.png" width="100" /> 
+  <img src="doc_images/learning/epoch10.png" width="100" /> 
+  <img src="doc_images/learning/epoch15.png" width="100" /> 
+  <img src="doc_images/learning/epoch20.png" width="100" /> 
+</p>
 <div class="row learning_image_top">
   <div class="col-lg-8 col-md-12 col-sm-12 col-12 mx-auto">
     <div class="row">
@@ -624,7 +632,7 @@ model_history = model.fit(train_dataset, epochs=EPOCHS,
       </div>
       <div class="col-lg-2 col-md-3 col-sm-3 col-3 mx-auto learning_image">
         <span class="learning_epoch_title">Epoch 5</span>
-        <img src="doc_images/learning/epoch3.png" width="200">
+        <img src="doc_images/learning/epoch5.png" width="200">
       </div>
       <div class="col-lg-2 col-md-3 col-sm-3 col-3 mx-auto learning_image">
         <span class="learning_epoch_title">Epoch 10</span>
@@ -679,18 +687,10 @@ model_history = model.fit(train_dataset, epochs=EPOCHS,
     </p>
   </div>
 </div>
-<div class="row image_row">
-  <div class="col-lg-8 col-md-12 col-sm-12 col-12 mx-auto">
-    <div class="row">
-      <div class="col-lg-6 col-md-6 col-sm-8 col-10 mx-auto">
-        <img  src="doc_images/iou_time.png" width="300">
-      </div>
-      <div class="col-lg-6 col-md-6 col-sm-8 col-10 mx-auto">
-        <img  src="doc_images/iou_boxplot.png" width="300">
-      </div>
-    </div>
-  </div>
-</div>
+<p float="left">
+  <img src="doc_images/iou_time.png" width="400" />
+  <img src="doc_images/iou_boxplot.png" width="400" /> 
+</p>
 <div class="row">
   <div class="col-lg-8 col-md-10 col-sm-10 col-12 mx-auto">
     <p class="p_no_top_gap">
@@ -834,6 +834,12 @@ loaded_model = keras.models.load_model(save_model_path)
     </p>
   </div>
 </div>
+<p float="left">
+  <img src="doc_images/predictions/test0.png" width="200" />
+  <img src="doc_images/predictions/prediction0.png" width="200" /> 
+  <img src="doc_images/predictions/test28.png" width="200" />
+  <img src="doc_images/predictions/prediction28.png" width="200" /> 
+</p>
 <div class="row">
   <div class="col-lg-10 col-md-12 col-sm-12 col-12 mx-auto">
     <div class="row">
