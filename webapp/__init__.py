@@ -78,7 +78,7 @@ def create_app(test_config=None):
             # Check if a product has been selected
             if "product_radio" in flask.request.form:
                 selected_image_id = flask.request.form['product_radio']
-                print(selected_image_id)
+                #print(selected_image_id)
                 # Get selected image from db
                 selected_image = db.execute(
                         'SELECT id, category, image_path FROM product p WHERE p.id = ' + selected_image_id 
@@ -97,11 +97,11 @@ def create_app(test_config=None):
             if ("filter_product_button" in flask.request.form) and (flask.request.form["filter_product_button"] != "All"):
                 filter_product_category = flask.request.form["filter_product_button"]
                 # Show all images if not filtered
-                print(filter_product_category)
+                #print(filter_product_category)
                 all_images = db.execute(
                     'SELECT id, category, image_path FROM product p WHERE p.category = "' + filter_product_category + '"'
                 ).fetchall()
-                print(all_images)
+                #print(all_images)
 
                 # If products are filtered by category, set previously selected image to None
                 #selected_image = None
@@ -112,7 +112,7 @@ def create_app(test_config=None):
                 ).fetchall()
                 filter_product_category = None
             
-            print(selected_image)
+            #print(selected_image)
 
 
             #all_images = os.listdir(os.path.join(app.static_folder, "images"))
@@ -264,4 +264,4 @@ if __name__ == "__main__":
     print(("* Loading Keras model and Flask starting server..."
         "please wait until server has fully started"))
     app = create_app()
-    app.run(host='localhost', port=5000)
+    app.run(host='0.0.0.0', port=80)

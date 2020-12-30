@@ -6,6 +6,9 @@
 <link rel="stylesheet" href="{{ url_for('static', filename='jquery-ui.theme.css') }}">
 <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}">
 <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='fontawesome.min.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='brands.min.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='solid.min.css') }}">
 
 <script src="{{url_for('.static', filename='jquery.min.js')}}"></script>
 <script src="{{url_for('.static', filename='bootstrap.bundle.min.js')}}"></script>
@@ -48,7 +51,7 @@
     <div id="navbarNavDropdown" class="navbar-collapse collapse">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a class="nav-link" href="">About this project</a>
+                <a class="nav-link" href="http://deepakkarkala.com/docs/articles/machine_learning/ecommerce_image_segmentation/about/index.html">Project-Report</a>
             </li>
         </ul>
         <ul class="navbar-nav">
@@ -277,6 +280,37 @@
             </form>
 
 
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row btn-links-row">
+        <div class="col-lg-8 col-md-12 col-sm-12 col-12 mx-auto">
+          <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-3 mx-auto">
+              <a href="http://deepakkarkala.com/docs/articles/machine_learning/ecommerce_image_segmentation/about/index.html"><button type="button" class="btn btn-primary btn-sm btn-links" style="padding:10px 2px;">
+                View Project Report
+              </button></a>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-3 mx-auto">
+              <a href="https://colab.research.google.com/drive/1snDybPVSYFC2swpiexTW5_F6Prv_fQ_F?usp=sharing"><button type="button" class="btn btn-primary btn-sm btn-links">
+                <img src="{{url_for('static', filename='misc_images/colab.png')}}" style="height: 30px; width:30px; padding:2px;">
+                Run in Google Colab
+              </button></a>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-3 mx-auto">
+              <a href="https://github.com/deepak-karkala/product-segmentation-ecommerce"><button type="button" class="btn btn-primary btn-sm btn-links">
+                <img src="{{url_for('static', filename='misc_images/github.png')}}" style="height: 30px; width:30px; padding:2px;">
+                View Source
+              </button></a>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-3 mx-auto">
+              <button type="button" class="btn btn-primary btn-sm btn-links">
+                <img src="{{url_for('static', filename='misc_images/docker.png')}}" style="height: 30px; width:30px; padding:2px;">
+                dkarkala01/ecom-prod-seg-app
+              </button>
+            </div>
           </div>
         </div>
       </div>
