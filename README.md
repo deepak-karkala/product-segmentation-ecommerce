@@ -380,10 +380,10 @@ model = build_model()
 <div class="row image_row">
   <div class="col-lg-8 col-md-12 col-sm-12 col-12 mx-auto">
     <div class="row">
-      <div class="col-lg-6 col-md-6 col-sm-6 col-10 mx-auto">
+      <div class="col-lg-4 col-md-6 col-sm-6 col-10 mx-auto">
         <img  src="doc_images/accuracy.png">
       </div>
-      <div class="col-lg-6 col-md-6 col-sm-6 col-10 mx-auto">
+      <div class="col-lg-4 col-md-6 col-sm-6 col-10 mx-auto">
         <img  src="doc_images/loss.png">
       </div>
     </div>
