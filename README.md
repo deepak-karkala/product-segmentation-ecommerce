@@ -608,16 +608,16 @@ model_history = model.fit(train_dataset, epochs=EPOCHS,
   </div>
 </div>
 <p float="left">
-  <img src="doc_images/learning/input.png" width="200" />
-  <img src="doc_images/learning/true_mask.png" width="200" /> 
+  <img src="doc_images/learning/input.png" width="100" />
+  <img src="doc_images/learning/true_mask.png" width="100" /> 
 </p>
 <p float="left">
-  <img src="doc_images/learning/epoch0.png" width="100" />
-  <img src="doc_images/learning/epoch2.png" width="100" /> 
-  <img src="doc_images/learning/epoch5.png" width="100" /> 
-  <img src="doc_images/learning/epoch10.png" width="100" /> 
-  <img src="doc_images/learning/epoch15.png" width="100" /> 
-  <img src="doc_images/learning/epoch20.png" width="100" /> 
+  <img src="doc_images/learning/epoch0.png" width="80" />
+  <img src="doc_images/learning/epoch2.png" width="80" /> 
+  <img src="doc_images/learning/epoch5.png" width="80" /> 
+  <img src="doc_images/learning/epoch10.png" width="80" /> 
+  <img src="doc_images/learning/epoch15.png" width="80" /> 
+  <img src="doc_images/learning/epoch20.png" width="80" /> 
 </p>
 <div class="row learning_image_top">
   <div class="col-lg-8 col-md-12 col-sm-12 col-12 mx-auto">
@@ -835,10 +835,10 @@ loaded_model = keras.models.load_model(save_model_path)
   </div>
 </div>
 <p float="left">
-  <img src="doc_images/predictions/test0.png" width="200" />
-  <img src="doc_images/predictions/prediction0.png" width="200" /> 
-  <img src="doc_images/predictions/test28.png" width="200" />
-  <img src="doc_images/predictions/prediction28.png" width="200" /> 
+  <img src="doc_images/predictions/test0.png" width="100" />
+  <img src="doc_images/predictions/prediction0.png" width="100" /> 
+  <img src="doc_images/predictions/test28.png" width="100" />
+  <img src="doc_images/predictions/prediction28.png" width="00" /> 
 </p>
 <div class="row">
   <div class="col-lg-10 col-md-12 col-sm-12 col-12 mx-auto">
