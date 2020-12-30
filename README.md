@@ -100,7 +100,7 @@ The project consisted of the following steps,
 
 <div class="row image_row">
   <div class="col-lg-6 col-md-10 col-sm-10 col-12 mx-auto">
-    <img class="block_diagram" src="doc_images/ecom_prod_seg_setup.png" width="400">
+    <img class="block_diagram" src="doc_images/ecom_prod_seg_setup.png" width="600">
   </div>
 </div>
 
@@ -117,7 +117,7 @@ The project consisted of the following steps,
 
 <div class="row image_row">
   <div class="col-lg-6 col-md-10 col-sm-10 col-12 mx-auto">
-    <img class="block_diagram" src="doc_images/ecom_prod_seg_data.png" width="400">
+    <img class="block_diagram" src="doc_images/ecom_prod_seg_data.png" width="600">
   </div>
 </div>
 
