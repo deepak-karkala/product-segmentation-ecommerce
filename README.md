@@ -16,7 +16,11 @@ The project consisted of the following steps,
 * Container: Using Docker to containerise the Web Application
 * Production: Using AWS CI/CD Pipeline for continuous integration and deployment.
 
-![Project Overview](/doc_images/ecom_prod_seg_overview.png)
+<div class="row image_row">
+  <div class="col-lg-6 col-md-10 col-sm-10 col-12 mx-auto">
+    <img class="block_diagram" src="doc_images/ecom_prod_seg_overview.png" width="700">
+  </div>
+</div>
 
 ## Project Setup
 ### Project Resources
@@ -45,7 +49,7 @@ The project consisted of the following steps,
 
 <div class="row image_row">
   <div class="col-lg-6 col-md-10 col-sm-10 col-12 mx-auto">
-    <img class="block_diagram" src="doc_images/ecom_prod_seg_goal.png">
+    <img class="block_diagram" src="doc_images/ecom_prod_seg_goal.png" width="600">
   </div>
 </div>
 
@@ -95,7 +99,7 @@ The project consisted of the following steps,
 
 <div class="row image_row">
   <div class="col-lg-6 col-md-10 col-sm-10 col-12 mx-auto">
-    <img class="block_diagram" src="doc_images/ecom_prod_seg_setup.png">
+    <img class="block_diagram" src="doc_images/ecom_prod_seg_setup.png" width="400">
   </div>
 </div>
 
@@ -112,7 +116,7 @@ The project consisted of the following steps,
 
 <div class="row image_row">
   <div class="col-lg-6 col-md-10 col-sm-10 col-12 mx-auto">
-    <img class="block_diagram" src="doc_images/ecom_prod_seg_data.png">
+    <img class="block_diagram" src="doc_images/ecom_prod_seg_data.png" width="400">
   </div>
 </div>
 
@@ -155,7 +159,7 @@ The project consisted of the following steps,
 </div>
 <div class="row image_row">
   <div class="col-lg-4 col-md-10 col-sm-10 col-12 mx-auto">
-    <img class="block_diagram" src="doc_images/ecom_prod_seg_datapipeline.png">
+    <img class="block_diagram" src="doc_images/ecom_prod_seg_datapipeline.png" width="400">
   </div>
 </div>
 
@@ -349,7 +353,7 @@ model = build_model()
 </div>
 <div class="row image_row">
   <div class="col-lg-8 col-md-10 col-sm-10 col-12 mx-auto">
-    <img src="doc_images/model.png">
+    <img src="doc_images/model.png" width="500">
   </div>
 </div>
 
@@ -376,10 +380,10 @@ model = build_model()
   <div class="col-lg-8 col-md-12 col-sm-12 col-12 mx-auto">
     <div class="row">
       <div class="col-lg-6 col-md-6 col-sm-6 col-10 mx-auto">
-        <img  src="doc_images/accuracy.png">
+        <img  src="doc_images/accuracy.png" width="300">
       </div>
       <div class="col-lg-6 col-md-6 col-sm-6 col-10 mx-auto">
-        <img  src="doc_images/loss.png">
+        <img  src="doc_images/loss.png" width="300">
       </div>
     </div>
   </div>
@@ -459,10 +463,10 @@ for optimizer in HP_OPTIMIZER.domain.values:
   <div class="col-lg-8 col-md-12 col-sm-12 col-12 mx-auto">
     <div class="row">
       <div class="col-lg-9 col-md-9 col-sm-9 col-9 mx-auto">
-        <img src="doc_images/hp_table.png">
+        <img src="doc_images/hp_table.png" width="500">
       </div>
       <div class="col-lg-3 col-md-3 col-sm-3 col-3 mx-auto">
-        <img  src="doc_images/hp_matrix.png">
+        <img  src="doc_images/hp_matrix.png" width="200">
       </div>
     </div>
   </div>
@@ -487,18 +491,18 @@ for optimizer in HP_OPTIMIZER.domain.values:
   <div class="col-lg-10 col-md-12 col-sm-12 col-12 mx-auto">
     <div class="row">
       <div class="col-lg-6 col-md-10 col-sm-10 col-10 mx-auto profiler_image">
-        <img  src="doc_images/profiler_steptime.png">
+        <img  src="doc_images/profiler_steptime.png" width="400">
       </div>
       <div class="col-lg-6 col-md-10 col-sm-10 col-10 mx-auto profiler_image">
-        <img  src="doc_images/profiler_memory.png">
+        <img  src="doc_images/profiler_memory.png" width="400">
       </div>
     </div>
     <div class="row">
       <div class="col-lg-6 col-md-10 col-sm-10 col-10 mx-auto profiler_image">
-        <img  src="doc_images/profiler_time.png">
+        <img  src="doc_images/profiler_time.png" width="400">
       </div>
       <div class="col-lg-6 col-md-10 col-sm-10 col-10 mx-auto profiler_image">
-        <img  src="doc_images/profiler_gpukernel.png">
+        <img  src="doc_images/profiler_gpukernel.png" width="400">
       </div>
     </div>
   </div>
@@ -543,7 +547,7 @@ train_dataset = train_dataset.prefetch(buffer_size=tf.data.experimental.AUTOTUNE
 </div>
 <div class="row image_row">
   <div class="col-lg-8 col-md-10 col-sm-10 col-12 mx-auto">
-    <img src="doc_images/trace_inputdatapipeline.png">
+    <img src="doc_images/trace_inputdatapipeline.png" width="600">
   </div>
 </div>
 
@@ -616,7 +620,7 @@ model_history = model.fit(train_dataset, epochs=EPOCHS,
 </div>
 <div class="row image_row">
   <div class="col-lg-4 col-md-8 col-sm-10 col-10 mx-auto">
-    <img src="doc_images/iou.png">
+    <img src="doc_images/iou.png" width="400">
   </div>
 </div>
 
@@ -637,11 +641,11 @@ model_history = model.fit(train_dataset, epochs=EPOCHS,
     <div class="row">
       <div class="col-lg-6 col-md-6 col-sm-6 col-6 mx-auto learning_image">
         <span class="learning_epoch_title">Input Image</span>
-        <img  src="doc_images/learning/input.png">
+        <img  src="doc_images/learning/input.png" width="200">
       </div>
       <div class="col-lg-6 col-md-6 col-sm-6 col-6 mx-auto learning_image">
         <span class="learning_epoch_title">True Mask</span>
-        <img  src="doc_images/learning/true_mask.png">
+        <img  src="doc_images/learning/true_mask.png" width="200">
       </div>
     </div>
   </div>
@@ -651,51 +655,51 @@ model_history = model.fit(train_dataset, epochs=EPOCHS,
     <div class="row">
       <div class="col-lg-2 col-md-3 col-sm-3 col-3 mx-auto learning_image">
         <span class="learning_epoch_title">Epoch 0</span>
-        <img src="doc_images/learning/epoch0.png">
+        <img src="doc_images/learning/epoch0.png" width="200">
       </div>
       <div class="col-lg-2 col-md-3 col-sm-3 col-3 mx-auto learning_image">
         <span class="learning_epoch_title">Epoch 2</span>
-        <img src="doc_images/learning/epoch2.png">
+        <img src="doc_images/learning/epoch2.png" width="200">
       </div>
       <div class="col-lg-2 col-md-3 col-sm-3 col-3 mx-auto learning_image">
         <span class="learning_epoch_title">Epoch 5</span>
-        <img src="doc_images/learning/epoch3.png">
+        <img src="doc_images/learning/epoch3.png" width="200">
       </div>
       <div class="col-lg-2 col-md-3 col-sm-3 col-3 mx-auto learning_image">
         <span class="learning_epoch_title">Epoch 10</span>
-        <img src="doc_images/learning/epoch10.png">
+        <img src="doc_images/learning/epoch10.png" width="200">
       </div>
       <div class="col-lg-2 col-md-3 col-sm-3 col-3 mx-auto learning_image">
         <span class="learning_epoch_title">Epoch 15</span>
-        <img src="doc_images/learning/epoch15.png">
+        <img src="doc_images/learning/epoch15.png" width="200">
       </div>
       <div class="col-lg-2 col-md-3 col-sm-3 col-3 mx-auto learning_image">
         <span class="learning_epoch_title">Epoch 20</span>
-        <img src="doc_images/learning/epoch20.png">
+        <img src="doc_images/learning/epoch20.png" width="200">
       </div>
       <div class="col-lg-2 col-md-3 col-sm-3 col-3 mx-auto learning_image">
         <span class="learning_epoch_title">Epoch 25</span>
-        <img src="doc_images/learning/epoch26.png">
+        <img src="doc_images/learning/epoch26.png" width="200">
       </div>
       <div class="col-lg-2 col-md-3 col-sm-3 col-3 mx-auto learning_image">
         <span class="learning_epoch_title">Epoch 30</span>
-        <img src="doc_images/learning/epoch30.png">
+        <img src="doc_images/learning/epoch30.png" width="200">
       </div>
       <div class="col-lg-2 col-md-3 col-sm-3 col-3 mx-auto learning_image">
         <span class="learning_epoch_title">Epoch 35</span>
-        <img src="doc_images/learning/epoch35.png">
+        <img src="doc_images/learning/epoch35.png" width="200">
       </div>
       <div class="col-lg-2 col-md-3 col-sm-3 col-3 mx-auto learning_image">
         <span class="learning_epoch_title">Epoch 40</span>
-        <img src="doc_images/learning/epoch40.png">
+        <img src="doc_images/learning/epoch40.png" width="200">
       </div>
       <div class="col-lg-2 col-md-3 col-sm-3 col-3 mx-auto learning_image">
         <span class="learning_epoch_title">Epoch 45</span>
-        <img src="doc_images/learning/epoch45.png">
+        <img src="doc_images/learning/epoch45.png" width="200">
       </div>
       <div class="col-lg-2 col-md-3 col-sm-3 col-3 mx-auto learning_image">
         <span class="learning_epoch_title">Epoch 50</span>
-        <img src="doc_images/learning/epoch49.png">
+        <img src="doc_images/learning/epoch49.png" width="200">
       </div>
     </div>
   </div>
@@ -718,10 +722,10 @@ model_history = model.fit(train_dataset, epochs=EPOCHS,
   <div class="col-lg-8 col-md-12 col-sm-12 col-12 mx-auto">
     <div class="row">
       <div class="col-lg-6 col-md-6 col-sm-8 col-10 mx-auto">
-        <img  src="doc_images/iou_time.png">
+        <img  src="doc_images/iou_time.png" width="300">
       </div>
       <div class="col-lg-6 col-md-6 col-sm-8 col-10 mx-auto">
-        <img  src="doc_images/iou_boxplot.png">
+        <img  src="doc_images/iou_boxplot.png" width="300">
       </div>
     </div>
   </div>
@@ -823,7 +827,7 @@ print(tflite_model_fp16_file.write_bytes(tflite_fp16_model))
 </div>
 <div class="row image_row">
   <div class="col-lg-8 col-md-10 col-sm-10 col-12 mx-auto">
-    <img src="doc_images/model_quantisation.png">
+    <img src="doc_images/model_quantisation.png" width="400">
   </div>
 </div>
 
@@ -875,90 +879,90 @@ loaded_model = keras.models.load_model(save_model_path)
       <div class="col-lg-4 col-md-6 col-sm-6 col-6 mx-auto prediction_image_top">
         <div class="row prediction_image_row">
           <div class="col-lg-6 col-md-6 col-sm-6 col-6 mx-auto">
-            <img  src="doc_images/predictions/test0.png">
+            <img  src="doc_images/predictions/test0.png" width="300">
           </div>
           <div class="col-lg-6 col-md-6 col-sm-6 col-6 mx-auto prediction_image">
-            <img  src="doc_images/predictions/prediction0.png">
+            <img  src="doc_images/predictions/prediction0.png" width="300">
           </div>
         </div>
       </div>
       <div class="col-lg-4 col-md-6 col-sm-6 col-6 mx-auto">
         <div class="row prediction_image_row">
           <div class="col-lg-6 col-md-6 col-sm-6 col-6 mx-auto">
-            <img  src="doc_images/predictions/test28.png">
+            <img  src="doc_images/predictions/test28.png" width="300">
           </div>
           <div class="col-lg-6 col-md-6 col-sm-6 col-6 mx-auto prediction_image">
-            <img  src="doc_images/predictions/prediction28.png">
+            <img  src="doc_images/predictions/prediction28.png" width="300">
           </div>
         </div>
       </div>
       <div class="col-lg-4 col-md-6 col-sm-6 col-6 mx-auto">
         <div class="row prediction_image_row">
           <div class="col-lg-6 col-md-6 col-sm-6 col-6 mx-auto">
-            <img  src="doc_images/predictions/test15.png">
+            <img  src="doc_images/predictions/test15.png" width="300">
           </div>
           <div class="col-lg-6 col-md-6 col-sm-6 col-6 mx-auto prediction_image">
-            <img  src="doc_images/predictions/prediction15.png">
+            <img  src="doc_images/predictions/prediction15.png" width="300">
           </div>
         </div>
       </div>
       <div class="col-lg-4 col-md-6 col-sm-6 col-6 mx-auto">
         <div class="row prediction_image_row">
           <div class="col-lg-6 col-md-6 col-sm-6 col-6 mx-auto">
-            <img  src="doc_images/predictions/test18.png">
+            <img  src="doc_images/predictions/test18.png" width="300">
           </div>
           <div class="col-lg-6 col-md-6 col-sm-6 col-6 mx-auto prediction_image">
-            <img  src="doc_images/predictions/prediction18.png">
+            <img  src="doc_images/predictions/prediction18.png" width="300">
           </div>
         </div>
       </div>
       <div class="col-lg-4 col-md-6 col-sm-6 col-6 mx-auto">
         <div class="row prediction_image_row">
           <div class="col-lg-6 col-md-6 col-sm-6 col-6 mx-auto">
-            <img  src="doc_images/predictions/test33.png">
+            <img  src="doc_images/predictions/test33.png" width="300">
           </div>
           <div class="col-lg-6 col-md-6 col-sm-6 col-6 mx-auto prediction_image">
-            <img  src="doc_images/predictions/prediction33.png">
+            <img  src="doc_images/predictions/prediction33.png" width="300">
           </div>
         </div>
       </div>
       <div class="col-lg-4 col-md-6 col-sm-6 col-6 mx-auto">
         <div class="row prediction_image_row">
           <div class="col-lg-6 col-md-6 col-sm-6 col-6 mx-auto">
-            <img  src="doc_images/predictions/test39.png">
+            <img  src="doc_images/predictions/test39.png" width="300">
           </div>
           <div class="col-lg-6 col-md-6 col-sm-6 col-6 mx-auto prediction_image">
-            <img  src="doc_images/predictions/prediction39.png">
+            <img  src="doc_images/predictions/prediction39.png" width="300">
           </div>
         </div>
       </div>
       <div class="col-lg-4 col-md-6 col-sm-6 col-6 mx-auto">
         <div class="row prediction_image_row">
           <div class="col-lg-6 col-md-6 col-sm-6 col-6 mx-auto">
-            <img  src="doc_images/predictions/test83.png">
+            <img  src="doc_images/predictions/test83.png" width="300">
           </div>
           <div class="col-lg-6 col-md-6 col-sm-6 col-6 mx-auto prediction_image">
-            <img  src="doc_images/predictions/prediction83.png">
+            <img  src="doc_images/predictions/prediction83.png" width="300">
           </div>
         </div>
       </div>
       <div class="col-lg-4 col-md-6 col-sm-6 col-6 mx-auto">
         <div class="row prediction_image_row">
           <div class="col-lg-6 col-md-6 col-sm-6 col-6 mx-auto">
-            <img  src="doc_images/predictions/test92.png">
+            <img  src="doc_images/predictions/test92.png" width="300">
           </div>
           <div class="col-lg-6 col-md-6 col-sm-6 col-6 mx-auto prediction_image">
-            <img  src="doc_images/predictions/prediction92.png">
+            <img  src="doc_images/predictions/prediction92.png" width="300">
           </div>
         </div>
       </div>
       <div class="col-lg-4 col-md-6 col-sm-6 col-6 mx-auto">
         <div class="row prediction_image_row">
           <div class="col-lg-6 col-md-6 col-sm-6 col-6 mx-auto">
-            <img  src="doc_images/predictions/test94.png">
+            <img  src="doc_images/predictions/test94.png" width="300">
           </div>
           <div class="col-lg-6 col-md-6 col-sm-6 col-6 mx-auto prediction_image">
-            <img  src="doc_images/predictions/prediction94.png">
+            <img  src="doc_images/predictions/prediction94.png" width="300">
           </div>
         </div>
       </div>
@@ -1151,7 +1155,7 @@ def predict():
 </div>
 <div class="row image_row">
   <div class="col-lg-8 col-md-10 col-sm-10 col-12 mx-auto">
-    <img  src="doc_images/restapi/prediction_api.png">
+    <img  src="doc_images/restapi/prediction_api.png" width="600">
   </div>
 </div>
 
@@ -1189,6 +1193,6 @@ def predict():
 </div>
 <div class="row image_row">
   <div class="col-lg-8 col-md-10 col-sm-10 col-12 mx-auto">
-    <img class="block_diagram" src="doc_images/ecom_prod_seg_production.png">
+    <img class="block_diagram" src="doc_images/ecom_prod_seg_production.png" width="700">
   </div>
 </div>
