@@ -787,10 +787,10 @@ loaded_model = keras.models.load_model(save_model_path)
   </div>
 </div>
 <p float="left">
-  <img src="doc_images/predictions/test0.png" width="150" />
-  <img src="doc_images/predictions/prediction0.png" width="150" style="background-color: black;"/> 
-  <img src="doc_images/predictions/test28.png" width="150" />
-  <img src="doc_images/predictions/prediction28.png" width="150" style="background-color: black;"/> 
+  <img src="doc_images/predictions/test0.png" width="120" />
+  <img src="doc_images/predictions/prediction0.png" width="120" style="background-color: black;"/> 
+  <img src="doc_images/predictions/test28.png" width="120" />
+  <img src="doc_images/predictions/prediction28.png" width="120" style="background-color: black;"/> 
 </p>
 <p float="left">
   <img src="doc_images/predictions/test15.png" width="150" />
