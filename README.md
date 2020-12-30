@@ -48,3 +48,41 @@ The project consisted of the following steps,
     <img class="block_diagram" src="doc_images/ecom_prod_seg_goal.png">
   </div>
 </div>
+
+
+## Project Challenges and constraints
+<div class="row">
+  <div class="col-lg-8 col-md-10 col-sm-10 col-12 mx-auto">
+    <p class="p_no_top_gap">
+      <ul>
+        <li><b>Limited Data Availability</b>: One of the major challenges that most enterprises face while planning to adopt Machine Learning into their system is the lack of availability of massive datasets necessary to train powerful Models. While in this project, although more data could have been acquired by scraping more product images, this is avoided in order to be constrained to work with a very limited dataset. Will this small dataset be enough to get satisfactory performance is one of the questions to be answered through this project.</li>
+        <li><b>Non-resuability of pre-trained models</b>: While there are already many pre-trained Image Segmentation Models which can be used for this purpose, there are two major challenges,
+          <ul>
+            <li><b>Custom classes</b>: Most pre-trained models would be trained on standard datasets such as MS-COCO, PASCAL-VOC whereas for our application there is a need to segment product categories which are not part of those datasets. As a result, a custom model will need to be built on top of the pre-trained model and the final layers of this model will then have to be trained using custom dataset.</li>
+            <li><b>Model evaluation time</b>: The pre-trained models are often massive in size since they have been trained to classify a wide variety of objects. Due to this, such models are slow in nature. However one of the challenges in this application is to have really fast response time such that user can view the segmented product in real-time.</li>
+          </ul>
+          As a result of this, such pre-trained models cannot be used for this application, instead a custom model which can perform image segmentation on custom product categories with very small size and evaluation time will need to be developed which forms the goal of this project.
+        </li>
+      </ul>
+    </p>
+  </div>
+</div>
+
+
+## End Result
+<div class="row">
+  <div class="col-lg-8 col-md-10 col-sm-10 col-12 mx-auto">
+    <p class="p_no_top_gap">
+      The end result of this project is shown below. The screen capture (from the app deployed on AWS) shows an example use case of the user selecting a product on a typical ecommerce website, the Image segmentation model returning the segmented product after which the user can then adjust the size and position of the product placed on the video stream of user's room.
+    </p>
+  </div>
+</div>
+
+<div class="row image_row">
+  <div class="col-lg-8 col-md-10 col-sm-10 col-12 mx-auto video_row">
+    <video controls preload="auto" autoplay="autoplay" loop="loop" muted="muted">
+      <source src="images/demo_2x.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</div>
