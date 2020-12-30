@@ -619,62 +619,14 @@ model_history = model.fit(train_dataset, epochs=EPOCHS,
   <img src="doc_images/learning/epoch15.png" width="80" /> 
   <img src="doc_images/learning/epoch20.png" width="80" /> 
 </p>
-<div class="row learning_image_top">
-  <div class="col-lg-8 col-md-12 col-sm-12 col-12 mx-auto">
-    <div class="row">
-      <div class="col-lg-2 col-md-3 col-sm-3 col-3 mx-auto learning_image">
-        <span class="learning_epoch_title">Epoch 0</span>
-        <img src="doc_images/learning/epoch0.png" width="200">
-      </div>
-      <div class="col-lg-2 col-md-3 col-sm-3 col-3 mx-auto learning_image">
-        <span class="learning_epoch_title">Epoch 2</span>
-        <img src="doc_images/learning/epoch2.png" width="200">
-      </div>
-      <div class="col-lg-2 col-md-3 col-sm-3 col-3 mx-auto learning_image">
-        <span class="learning_epoch_title">Epoch 5</span>
-        <img src="doc_images/learning/epoch5.png" width="200">
-      </div>
-      <div class="col-lg-2 col-md-3 col-sm-3 col-3 mx-auto learning_image">
-        <span class="learning_epoch_title">Epoch 10</span>
-        <img src="doc_images/learning/epoch10.png" width="200">
-      </div>
-      <div class="col-lg-2 col-md-3 col-sm-3 col-3 mx-auto learning_image">
-        <span class="learning_epoch_title">Epoch 15</span>
-        <img src="doc_images/learning/epoch15.png" width="200">
-      </div>
-      <div class="col-lg-2 col-md-3 col-sm-3 col-3 mx-auto learning_image">
-        <span class="learning_epoch_title">Epoch 20</span>
-        <img src="doc_images/learning/epoch20.png" width="200">
-      </div>
-      <div class="col-lg-2 col-md-3 col-sm-3 col-3 mx-auto learning_image">
-        <span class="learning_epoch_title">Epoch 25</span>
-        <img src="doc_images/learning/epoch26.png" width="200">
-      </div>
-      <div class="col-lg-2 col-md-3 col-sm-3 col-3 mx-auto learning_image">
-        <span class="learning_epoch_title">Epoch 30</span>
-        <img src="doc_images/learning/epoch30.png" width="200">
-      </div>
-      <div class="col-lg-2 col-md-3 col-sm-3 col-3 mx-auto learning_image">
-        <span class="learning_epoch_title">Epoch 35</span>
-        <img src="doc_images/learning/epoch35.png" width="200">
-      </div>
-      <div class="col-lg-2 col-md-3 col-sm-3 col-3 mx-auto learning_image">
-        <span class="learning_epoch_title">Epoch 40</span>
-        <img src="doc_images/learning/epoch40.png" width="200">
-      </div>
-      <div class="col-lg-2 col-md-3 col-sm-3 col-3 mx-auto learning_image">
-        <span class="learning_epoch_title">Epoch 45</span>
-        <img src="doc_images/learning/epoch45.png" width="200">
-      </div>
-      <div class="col-lg-2 col-md-3 col-sm-3 col-3 mx-auto learning_image">
-        <span class="learning_epoch_title">Epoch 50</span>
-        <img src="doc_images/learning/epoch49.png" width="200">
-      </div>
-    </div>
-  </div>
-</div>
-
-
+<p float="left">
+  <img src="doc_images/learning/epoch26.png" width="80" />
+  <img src="doc_images/learning/epoch30.png" width="80" /> 
+  <img src="doc_images/learning/epoch35.png" width="80" /> 
+  <img src="doc_images/learning/epoch40.png" width="80" /> 
+  <img src="doc_images/learning/epoch45.png" width="80" /> 
+  <img src="doc_images/learning/epoch49.png" width="80" /> 
+</p>
 <div class="row">
   <div class="col-lg-8 col-md-10 col-sm-10 col-12 mx-auto" id="comparison">
     <h3 class="sub-title">Model Comparison and Selection</h3>
@@ -835,11 +787,30 @@ loaded_model = keras.models.load_model(save_model_path)
   </div>
 </div>
 <p float="left">
-  <img src="doc_images/predictions/test0.png" width="100" />
-  <img src="doc_images/predictions/prediction0.png" width="100" /> 
-  <img src="doc_images/predictions/test28.png" width="100" />
-  <img src="doc_images/predictions/prediction28.png" width="00" /> 
+  <img src="doc_images/predictions/test0.png" width="150" />
+  <img src="doc_images/predictions/prediction0.png" width="150" style="background-color: black;"/> 
+  <img src="doc_images/predictions/test28.png" width="150" />
+  <img src="doc_images/predictions/prediction28.png" width="150" style="background-color: black;"/> 
 </p>
+<p float="left">
+  <img src="doc_images/predictions/test15.png" width="150" />
+  <img src="doc_images/predictions/prediction15.png" width="150" style="background-color: black;"/> 
+  <img src="doc_images/predictions/test18.png" width="150" />
+  <img src="doc_images/predictions/prediction18.png" width="150" style="background-color: black;"/> 
+</p>
+<p float="left">
+  <img src="doc_images/predictions/test33.png" width="150" />
+  <img src="doc_images/predictions/prediction33.png" width="150" style="background-color: black;"/> 
+  <img src="doc_images/predictions/test39.png" width="150" />
+  <img src="doc_images/predictions/prediction39.png" width="150" style="background-color: black;"/> 
+</p>
+<p float="left">
+  <img src="doc_images/predictions/test83.png" width="150" />
+  <img src="doc_images/predictions/prediction83.png" width="150" style="background-color: black;"/> 
+  <img src="doc_images/predictions/test92.png" width="150" />
+  <img src="doc_images/predictions/prediction92.png" width="150" style="background-color: black;"/> 
+</p>
+
 <div class="row">
   <div class="col-lg-10 col-md-12 col-sm-12 col-12 mx-auto">
     <div class="row">
