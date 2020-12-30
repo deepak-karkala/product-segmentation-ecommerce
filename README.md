@@ -793,121 +793,23 @@ loaded_model = keras.models.load_model(save_model_path)
   <img src="doc_images/predictions/prediction28.png" width="120" style="background-color: black;"/> 
 </p>
 <p float="left">
-  <img src="doc_images/predictions/test15.png" width="150" />
-  <img src="doc_images/predictions/prediction15.png" width="150" style="background-color: black;"/> 
-  <img src="doc_images/predictions/test18.png" width="150" />
-  <img src="doc_images/predictions/prediction18.png" width="150" style="background-color: black;"/> 
+  <img src="doc_images/predictions/test15.png" width="120" />
+  <img src="doc_images/predictions/prediction15.png" width="120" style="background-color: black;"/> 
+  <img src="doc_images/predictions/test18.png" width="120" />
+  <img src="doc_images/predictions/prediction18.png" width="120" style="background-color: black;"/> 
 </p>
 <p float="left">
-  <img src="doc_images/predictions/test33.png" width="150" />
-  <img src="doc_images/predictions/prediction33.png" width="150" style="background-color: black;"/> 
-  <img src="doc_images/predictions/test39.png" width="150" />
-  <img src="doc_images/predictions/prediction39.png" width="150" style="background-color: black;"/> 
+  <img src="doc_images/predictions/test33.png" width="120" />
+  <img src="doc_images/predictions/prediction33.png" width="120" style="background-color: black;"/> 
+  <img src="doc_images/predictions/test39.png" width="120" />
+  <img src="doc_images/predictions/prediction39.png" width="120" style="background-color: black;"/> 
 </p>
 <p float="left">
-  <img src="doc_images/predictions/test83.png" width="150" />
-  <img src="doc_images/predictions/prediction83.png" width="150" style="background-color: black;"/> 
-  <img src="doc_images/predictions/test92.png" width="150" />
-  <img src="doc_images/predictions/prediction92.png" width="150" style="background-color: black;"/> 
+  <img src="doc_images/predictions/test83.png" width="120" />
+  <img src="doc_images/predictions/prediction83.png" width="120" style="background-color: black;"/> 
+  <img src="doc_images/predictions/test92.png" width="120" />
+  <img src="doc_images/predictions/prediction92.png" width="120" style="background-color: black;"/> 
 </p>
-
-<div class="row">
-  <div class="col-lg-10 col-md-12 col-sm-12 col-12 mx-auto">
-    <div class="row">
-      <div class="col-lg-4 col-md-6 col-sm-6 col-6 mx-auto prediction_image_top">
-        <div class="row prediction_image_row">
-          <div class="col-lg-6 col-md-6 col-sm-6 col-6 mx-auto">
-            <img  src="doc_images/predictions/test0.png" width="200">
-          </div>
-          <div class="col-lg-6 col-md-6 col-sm-6 col-6 mx-auto prediction_image">
-            <img  src="doc_images/predictions/prediction0.png" width="200">
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 col-sm-6 col-6 mx-auto">
-        <div class="row prediction_image_row">
-          <div class="col-lg-6 col-md-6 col-sm-6 col-6 mx-auto">
-            <img  src="doc_images/predictions/test28.png" width="200">
-          </div>
-          <div class="col-lg-6 col-md-6 col-sm-6 col-6 mx-auto prediction_image">
-            <img  src="doc_images/predictions/prediction28.png" width="200">
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 col-sm-6 col-6 mx-auto">
-        <div class="row prediction_image_row">
-          <div class="col-lg-6 col-md-6 col-sm-6 col-6 mx-auto">
-            <img  src="doc_images/predictions/test15.png" width="200">
-          </div>
-          <div class="col-lg-6 col-md-6 col-sm-6 col-6 mx-auto prediction_image">
-            <img  src="doc_images/predictions/prediction15.png" width="200">
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 col-sm-6 col-6 mx-auto">
-        <div class="row prediction_image_row">
-          <div class="col-lg-6 col-md-6 col-sm-6 col-6 mx-auto">
-            <img  src="doc_images/predictions/test18.png" width="200">
-          </div>
-          <div class="col-lg-6 col-md-6 col-sm-6 col-6 mx-auto prediction_image">
-            <img  src="doc_images/predictions/prediction18.png" width="200">
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 col-sm-6 col-6 mx-auto">
-        <div class="row prediction_image_row">
-          <div class="col-lg-6 col-md-6 col-sm-6 col-6 mx-auto">
-            <img  src="doc_images/predictions/test33.png" width="200">
-          </div>
-          <div class="col-lg-6 col-md-6 col-sm-6 col-6 mx-auto prediction_image">
-            <img  src="doc_images/predictions/prediction33.png" width="200">
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 col-sm-6 col-6 mx-auto">
-        <div class="row prediction_image_row">
-          <div class="col-lg-6 col-md-6 col-sm-6 col-6 mx-auto">
-            <img  src="doc_images/predictions/test39.png" width="200">
-          </div>
-          <div class="col-lg-6 col-md-6 col-sm-6 col-6 mx-auto prediction_image">
-            <img  src="doc_images/predictions/prediction39.png" width="200">
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 col-sm-6 col-6 mx-auto">
-        <div class="row prediction_image_row">
-          <div class="col-lg-6 col-md-6 col-sm-6 col-6 mx-auto">
-            <img  src="doc_images/predictions/test83.png" width="200">
-          </div>
-          <div class="col-lg-6 col-md-6 col-sm-6 col-6 mx-auto prediction_image">
-            <img  src="doc_images/predictions/prediction83.png" width="200">
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 col-sm-6 col-6 mx-auto">
-        <div class="row prediction_image_row">
-          <div class="col-lg-6 col-md-6 col-sm-6 col-6 mx-auto">
-            <img  src="doc_images/predictions/test92.png" width="200">
-          </div>
-          <div class="col-lg-6 col-md-6 col-sm-6 col-6 mx-auto prediction_image">
-            <img  src="doc_images/predictions/prediction92.png" width="200">
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 col-sm-6 col-6 mx-auto">
-        <div class="row prediction_image_row">
-          <div class="col-lg-6 col-md-6 col-sm-6 col-6 mx-auto">
-            <img  src="doc_images/predictions/test94.png" width="200">
-          </div>
-          <div class="col-lg-6 col-md-6 col-sm-6 col-6 mx-auto prediction_image">
-            <img  src="doc_images/predictions/prediction94.png" width="200">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
 <div class="row">
   <div class="col-lg-8 col-md-10 col-sm-10 col-12 mx-auto">
     <p>
